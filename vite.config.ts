@@ -1,10 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Replace 'your-username' and 'your-repo-name'
 export default defineConfig({
   plugins: [react()],
-  base: '/Portfolio/', // 👈 important!
+  base: '/', // 👈 set '/' if deployed at root
   optimizeDeps: {
     exclude: ['lucide-react'],
   },

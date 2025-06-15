@@ -84,10 +84,22 @@ const About: React.FC = () => {
             </div>
 
             {/* Download Resume Button */}
-            <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <button
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Vanapalli_Anusha_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
               <Download className="w-5 h-5" />
-              Download Resume
+                Download Resume
             </button>
+
+
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ const About: React.FC = () => {
             <div className="inline-block">
               <div className="w-96 h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-500">
                 <img
-                  src="public/profile.jpeg"
+                  src="/profile.jpeg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -87,7 +87,7 @@ const About: React.FC = () => {
             <button
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/public/resume.pdf';
+                link.href = '/resume.pdf';
                 link.download = 'Vanapalli_Anusha_Resume.pdf';
                 document.body.appendChild(link);
                 link.click();

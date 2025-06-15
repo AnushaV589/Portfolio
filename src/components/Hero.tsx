@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
           {/* Profile Image */}
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="profile.jpeg" // update this to match your actual file
+              src="/public/profile.jpeg" // update this to match your actual file
               alt="Profile"
               className="w-80 h-80 object-cover rounded-full border-4 border-blue-500 shadow-lg"
             />

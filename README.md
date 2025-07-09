@@ -34,6 +34,7 @@ Features
 
 
 📇 Contact Information
+
 📧 Email: anushavanapalli035@gmail.com
 📱 Phone: +91 9133508724
 🔗 LinkedIn: linkedin.com/in/anusha-vanapalli-046723306
